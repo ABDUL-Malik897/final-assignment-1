@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  # Build a Responsive Navbar
 
 ## ✅ Open your VS Code and complete this assignment manually.
@@ -18,3 +19,7 @@ You must follow the design exactly:
 
 #### Mobile: Full-screen green vertical menu with centered items and "Create Account" at bottom.
 
+=======
+# final-assignment-1
+Final Assignment
+>>>>>>> 987e99b3a720e447fcde21be7bc663d64cd0d28d
