@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --bg-color : rgb(17, 133, 17);
+  --btn-color :rgb(55, 179, 55);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .logo {
+  padding: 12px;
+  color:var(--bg-color);
+  font-size: 1.1rem;
+}
+
+.links{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.links a{
+  color: var(--bg-color);
+  text-decoration: none;
+  font-weight: 600;
+  cursor:default;
+}
+
+.btn{
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--btn-color);
+  border: none;
+  color: #f1f1f1;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer; 
+}
+
+
+@media(max-width : 720px){
+
+.container{
+  display: block;
+  width: 100%;
+  background-color:var(--bg-color);
+  color: #ccc;
+  padding: 15px 0;
+}
+.container .logo{
+  padding-left: 15px;
+  color: #f1f1f1;
+}
+.links{
+  padding: 18px;
+}
+.links a{
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 600;
+  cursor:default;
+}
+.btn{
+  background-color: #f1f1f1;
+  color: var(--btn-color);
+  font-size: .9rem;
+}
+}
+
+
+@media (max-width : 480px) {
+.container{
+  width: 100%;
+}
+.links {
+  display:flex;
+  gap: 40px;
+  flex-direction: column;
+}
 }
